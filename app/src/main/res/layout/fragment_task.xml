@@ -113,7 +113,7 @@
         android:layout_height="1dp"
         android:background="#252A31"
         android:alpha="0.1"
-        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintVertical_bias="0.50"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
@@ -178,7 +178,33 @@
         app:layout_constraintTop_toBottomOf="@id/const_view"
         app:layout_constraintBottom_toBottomOf="parent"
         />
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/const_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <NumberPicker
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        app:layout_constraintRight_toLeftOf="@id/seconds"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/const_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <NumberPicker
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/hour"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/const_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
 
 
